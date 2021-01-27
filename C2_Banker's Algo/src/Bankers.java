@@ -104,9 +104,11 @@ public class Bankers {
 		
 		else {
 			System.out.print("\n\n\tSafe Sequence : ");
-			for(int i : safeSeq) {
-				System.out.print(i+"->");
+			int i;
+			for(i = 0 ; i < safeSeq.size() - 1 ; i++) {
+				System.out.print(safeSeq.get(i)+"->");
 			}
+			System.out.print(safeSeq.get(i));
 		}
 	}
 
