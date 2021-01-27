@@ -35,6 +35,7 @@ public class SchedulingAlgorithms {
 		Scanner scan = new Scanner(System.in);
 		int ch  = 0;
 		do {
+			System.out.println("\t\t------Scheduling Algos------\n\n");
 			System.out.println("\t-->Enter your choice");
 			System.out.println("\t\t1.FCFS\n\t\t2.SJF\n\t\t3.Priority\n\t\t4.Robin Round\n\t\t5.Exit");
 			ch = scan.nextInt();

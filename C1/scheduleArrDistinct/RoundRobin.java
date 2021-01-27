@@ -64,6 +64,7 @@ public class RoundRobin extends process{
 		}
 		awt = wt/n;
 		atat = tat/n;
+		System.out.println("      RoundRobin : ");
 		print();
 	}
 }

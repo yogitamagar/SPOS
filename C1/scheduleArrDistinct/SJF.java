@@ -10,6 +10,7 @@ public class SJF extends process{
 		this.p = p;
 		this.n = n;
 	}
+	
 	@Override
 	public void findFT() {
 		FT = new ArrayList<Integer>(Arrays.asList(new Integer[n]));
@@ -63,6 +64,7 @@ public class SJF extends process{
 		}
 		awt = wt/n;
 		atat = tat/n;
+		System.out.println("      SJF : ");
 		print();
 	}
 	

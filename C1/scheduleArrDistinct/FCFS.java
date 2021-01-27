@@ -32,6 +32,7 @@ public class FCFS extends process{
 		}
 		awt = wt/n;
 		atat = tat/n;
+		System.out.println("      FCFS : ");
 		print();
 	}
 }

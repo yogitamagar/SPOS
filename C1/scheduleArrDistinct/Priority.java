@@ -62,6 +62,7 @@ public class Priority extends process{
 		}
 		awt = wt/n;
 		atat = tat/n;
+		System.out.println("      Priority : ");
 		print();
 	}
 

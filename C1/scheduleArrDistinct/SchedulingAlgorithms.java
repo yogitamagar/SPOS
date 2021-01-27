@@ -129,7 +129,7 @@ public class SchedulingAlgorithms {
 						process.add(p);
 						i++;
 					}
-//					Collections.sort(process,new ArrComparator()); //After sorting according to priority it behaves same as FCFS
+					Collections.sort(process,new ArrComparator()); //After sorting according to priority it behaves same as FCFS
 					Priority pr = new Priority(process,n);
 					pr.findAvgTime();
 					break;
