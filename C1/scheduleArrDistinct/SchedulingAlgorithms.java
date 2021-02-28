@@ -151,23 +151,26 @@ public class SchedulingAlgorithms {
 					qtm = scan.nextInt();
 					scan.nextLine();
 					
-					while(i<n) {
-						System.out.println("\t\t-->Enter the Process id");
-						int pid = scan.nextInt();
-						scan.nextLine();
-						System.out.println("\t\t-->Execution time");
-						int exec = scan.nextInt();
-						scan.nextLine();
-						System.out.println("\t\t-->Arrival Time");
-						int arr = scan.nextInt();
-						scan.nextLine();
-						proc p = new proc(pid,exec,0,arr);
-						process.add(p);
-						i++;
+					if(qtm <=0 )  System.out.println("\t\tThe Quantum time can't be less than 1 :( ");
+					else {
+						while(i<n) {
+							System.out.println("\t\t-->Enter the Process id");
+							int pid = scan.nextInt();
+							scan.nextLine();
+							System.out.println("\t\t-->Execution time");
+							int exec = scan.nextInt();
+							scan.nextLine();
+							System.out.println("\t\t-->Arrival Time");
+							int arr = scan.nextInt();
+							scan.nextLine();
+							proc p = new proc(pid,exec,0,arr);
+							process.add(p);
+							i++;
+						}
+						Collections.sort(process,new ArrComparator()); 
+						RoundRobin rr = new RoundRobin(process,n,qtm);
+						rr.findAvgTime();
 					}
-					Collections.sort(process,new ArrComparator()); 
-					RoundRobin rr = new RoundRobin(process,n,qtm);
-					rr.findAvgTime();
 					break;
 				}
 				}

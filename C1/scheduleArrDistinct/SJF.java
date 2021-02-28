@@ -50,7 +50,6 @@ public class SJF extends process{
 	    		WT.set(minIndex,TAT.get(minIndex) - p.get(minIndex).exec);
 	    	}
 	    }
-	    
 	}
 
 	@Override

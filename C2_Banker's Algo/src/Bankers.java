@@ -68,6 +68,7 @@ public class Bankers {
 		for(int i : work) System.out.print(i+" ");
 		System.out.print("\n\t\tFinish Array : ");
 		for(int i : finish ) System.out.print(i+" ");
+
 		
 		System.out.println();
 		int count = 0;
@@ -93,7 +94,7 @@ public class Bankers {
 						for(int w : work) System.out.print(w+" ");
 						System.out.print("\n\t\tFinish Array : ");
 						for(int f : finish ) System.out.print(f+" ");
-						System.out.println();
+						System.out.println();					
 					}
 				}
 			}
