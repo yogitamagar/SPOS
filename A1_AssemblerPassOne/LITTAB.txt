@@ -1,0 +1,2 @@
+Index	Literal	Address
+0	='10'	106

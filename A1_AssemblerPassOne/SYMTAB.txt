@@ -1,0 +1,5 @@
+Index	Symbol	Address
+0	A	100
+1	L1	103
+2	B	108
+3	C	107
